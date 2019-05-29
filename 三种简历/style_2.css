@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    display: block;
+    margin: 12px 8px;
+    color: #fff;
+    float: left;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 115px;
+    background-color: #65a4fa;
+    width: 200px;
+    height: 900px;
+}
+h3 {
+    font-size: 24px;
+    line-height: 46px;
+}
+span {
+    font-size: 18px;
+}
+span strong {
+    line-height: 50px;
+}
