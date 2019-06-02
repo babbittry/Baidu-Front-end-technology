@@ -44,6 +44,12 @@ header ul li a:hover {
 .banner .banner-in {
     height: 300px;
 }
+.banner .banner-in .st,
+.banner .banner-in .rd.
+.banner .banner-in .th {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.2);
+}
 .content {
     width: 960px;
 }
