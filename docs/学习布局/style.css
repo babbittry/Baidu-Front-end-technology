@@ -108,6 +108,33 @@ hr {
     width: 960px;
     margin: 0 auto;
 }
+.first,
+.second,
+.third {
+    height: 176px;
+    box-sizing: content-box;
+    display: flex;
+    overflow: hidden;
+}
+.content .third {
+    margin-bottom: 20px;
+}
+.content .first div,
+.content .second div,
+.content .third div {
+    flex: 1;
+    padding: 80px;
+    border: 1px solid #cccccc;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.content .first:last-child,
+.content .second:last-child,
+.content .third:last-child {
+    margin-right: 0;
+} 
 footer {
     width: 100%;
     height: 120px;
