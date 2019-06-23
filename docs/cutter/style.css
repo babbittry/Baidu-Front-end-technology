@@ -187,23 +187,24 @@ header form input[type = button] {
     top: 368px;
     left: 320px;
 }
-.support button:nth-of-type(1) {
+.support button {
     width: 240px;
     height: 60px;
-    background-color: #fff;
+    color: #fff;
     position: absolute;
     top: 554px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #6a706a;
+}
+.support button:nth-of-type(1) {
     left: 320px;
 }
 .support button:nth-of-type(2) {
-     width: 236px;
-     height: 60px;
-     background-color: rgba(0, 0, 0, 0);
-     border: 1px solid #6a706a;
-     color: #fff;
-     position: absolute;
-     top: 554px;
-     left: 584px;
+    left: 584px;
+}
+.support button:hover {
+    background-color: #fff;
+    color: #000;
 }
 .produce {
     height: 580px;
