@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-input, button {
+input, button, textarea {
     border: 0;
     outline: none;     /*  取消轮廓边框 */
 }
@@ -65,7 +65,10 @@ header form .free {
     color: #5d5a53;
     line-height: 28px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 20px; 
+}
+header form input {
+    margin-top: 46px;
 }
 header form input[type = text] {
     height: 50px;
@@ -286,6 +289,7 @@ header form input[type = button] {
     width: 964px;
     margin: 0 auto;
     overflow: hidden; 
+    position: relative;
 }
 .crew .title {
     margin-top: 100px;
@@ -303,7 +307,125 @@ header form input[type = button] {
     margin: 36px auto 0;
 }
 .crew img {
+    width: 470px;
+    height: 340px;
+    vertical-align: bottom;
+}
+.crew .head {
+    position: relative;
+}
+.crew .head:nth-child(odd) {
+    float: left;
+}
+.crew .head:nth-child(even){
+    float: right;
+}
+.crew .head:nth-child(3),
+.crew .head:nth-child(4) {
+    margin-top: 66px;
+}
+.crew .head:nth-child(5),
+.crew .head:nth-child(6) {
+    margin-top: 30px;
+}
+.crew .head .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 470px;
+    height: 340px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    opacity: 0;
+}
+.crew .head .mask h3 {
+    text-align: center;
+    margin-top: 112px;
+    font-size: 14px;
+    line-height: 14px;
+}
+.crew .head .mask p {
+    margin-top: 20px;
+    font-size: 10px;
+    text-align: center;
+    color: #968e8a;
+}
+.crew .head a:hover .mask {
+    opacity: 1;
+}
+.crew .head .facebook,
+.crew .head .twitter,
+.crew .head .twitch {
     display: inline-block;
+    font-family: 'icomoon';
+    font-size: 18px;
+    color: #fff;
+    border: 1px solid #7a7a7a;
+    width: 54px;
+    height: 54px;
+    border-radius: 27px; 
+    text-align: center;
+    line-height: 54px;
+    margin-top: 40px;
+    margin-right: 10px;
+}
+.crew .head .facebook {
+    margin-left: 124px;
+}
+.crew .head .twitch {
+    margin-right: 0;
+}
+.signIn {
+    background-color: pink;
+    width: 964px;
+    height: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.signIn form {
+    margin-top: 72px;
+    height: 560px;
+    width: 466px;
+    border: 1px solid #e7e7e7;
+    border-radius: 8px;
+}
+.signIn form p {
+    font-size: 12px;
+    margin-top: 50px; 
+    text-align: center;
+    color: #141414;
+    margin-bottom: 48px; 
+}
+.signIn form input {
+    margin: 0 auto 30px;
+    display: block;
+    border: 1px solid #d4d3d3;  
+    border-radius: 1px;
+    padding-left: 16px; 
+    width: 368px;
+    height: 48px;
+    line-height: 48px;
+    box-sizing: border-box;
+}
+.signIn form textarea {
+    box-sizing: border-box;
+    font-family: 'Microsoft YaHei';
+    margin: 0 auto 30px;
+    display: block;
+    border: 1px solid #d4d3d3;  
+    border-radius: 1px;
+    padding-left: 16px; 
+    width: 368px;
+    height: 142px;
+    line-height: 48px;
+    resize: none;
+}
+.signIn form input[type = button] {
+    background-color: #141414;
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    padding-left: 0; 
 }
 footer {
     width: 100%;
