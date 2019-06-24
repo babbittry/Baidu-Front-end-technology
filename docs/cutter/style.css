@@ -376,13 +376,13 @@ header form input[type = button] {
     margin-right: 0;
 }
 .signIn {
-    background-color: pink;
     width: 964px;
     height: 700px;
     margin: 0 auto;
     overflow: hidden;
 }
 .signIn form {
+    float: left;
     margin-top: 72px;
     height: 560px;
     width: 466px;
@@ -427,8 +427,77 @@ header form input[type = button] {
     font-size: 10px;
     padding-left: 0; 
 }
+.signIn .contact {
+    float: right;
+    width: 370px;
+    height: 700px;
+}
+.signIn .info {
+    font-size: 12px;
+    overflow: hidden;
+    line-height: 26px;
+    color: #141414;
+    margin-bottom: 38px;
+}
+.signIn .info span{
+    float: left;
+    font-family: 'icomoon';
+    margin-right: 18px;
+    font-size: 26px;
+    color: #5a5a5a;
+    overflow: hidden;
+    line-height: 28px;
+}
+.signIn .contact .title {
+    font-size: 30px;
+    font-weight: 200;
+    color: #141414;
+    margin-top: 160px;
+    line-height: 30px;
+}
+.signIn .contact .words {
+    font-size: 12px;
+    line-height: 26px;
+    color: #5a5a5a;
+    margin-top: 40px;
+    margin-bottom: 74px;
+}
 footer {
     width: 100%;
     height: 410px;
     background-color: #141414;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+footer dl {
+    margin-top: 88px; 
+    font-size: 12px;
+    line-height: 12px;
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    
+}
+footer dl:nth-child(1) {
+    margin-left: 214px;
+}
+footer dl dt {
+    color: #fff;
+    margin-bottom: 36px;
+}
+footer dl dd {
+    color: #565656;
+    margin-bottom: 36px;
+}
+footer .enjoy dd {
+    line-height: 30px;
+    font-family: 'icomoon';
+}
+footer .enjoy dd a {
+    font-size: 18px;
+    color: #5b5b5b;
+    margin-right: 28px;
+}
+footer .enjoy dd a:last-child {
+    margin-right: 0;
 }
