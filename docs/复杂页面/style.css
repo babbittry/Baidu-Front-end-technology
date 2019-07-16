@@ -2,3 +2,131 @@
     margin: 0;
     padding: 0;
 }
+body {
+    display: flex;
+    height: 100%;
+}
+.nav {
+    width: 100px;
+    height: 100vh;
+    background-color: #1d2531;
+    position: relative;
+}
+.nav .item {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+}
+.actionLeft {
+    position: absolute;
+    left: 26px;
+    bottom: 20px;
+    width: 16px;
+    height: 16px;
+}
+.actionRight {
+    position: absolute;
+    right: 26px;
+    bottom: 20px;
+    width: 16px;
+    height: 16px;
+}
+.menu {
+    width: 250px;
+    height: 100vh;
+    background-color: #222c3c;
+}
+.menu dl {
+    margin: 29px;
+}
+.menu dl dt {
+    overflow: hidden;
+    margin-bottom: 10px;
+    height: 36px;
+    position: relative;
+}
+.menu dl dt span{
+    color: #5b6779;
+    font-size: 18px;
+    float: left;
+    line-height: 36px;
+}
+.menu dl dt img {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top:50%;
+    right: 0;
+    transform:translate(0,-50%);  /* 走的自己的一半 */
+
+}
+.menu dl dd {
+    color: #b7c0cd;
+    font-size: 14px;
+    line-height: 36px;
+    position: relative;
+}
+.menu dl dd img {
+    margin-right: 12px;
+}
+.menu dl dd .remain {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    background-color: #2499f1;
+    width: 32px;
+    height: 24px;
+    border-radius: 11px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+}
+.menu dl dd .warning {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    background-color: #e34226;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+}
+.menu hr {
+    width: 190px;
+    border: 1px solid #2a3547;
+    margin: 0 auto; 
+}
+.message {
+    flex: 1;
+    height: 100vh;
+    background-color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.top {
+    width: 100%;
+    height: 80px;
+    background-color: pink;
+    display: block;
+}
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+.list {
+    width: 400px;
+    box-sizing: border-box;
+    float: left;
+    background-color: hotpink;
+}
+
+.moment {
+    float: left;
+    flex: 1;
+    background-color: skyblue;
+}
