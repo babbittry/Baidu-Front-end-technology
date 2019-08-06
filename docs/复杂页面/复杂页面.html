@@ -47,12 +47,20 @@
     </div>
     <div class="message">
         <div class="top">
-            <span>Message</span>
+            <span class="msg">Message</span>
+            <img src="images/head.png" alt="">
+            <span class="name">Jordan J.</span>
+            <span class="identity">Administrator</span>
+            <span class="arrow"></span>
         </div>
         <div class="main">
             <div class="list">
+                <!-- 搜索框 -->
                 <div class="search">
-                    <input type="text" placeholder="Search">
+                    <form action="">    <!-- text放在form表单里面 -->
+                        <input type="text" placeholder="Search">      <!-- placeholder占位符，内容输入自动清除默认值 -->
+                        <button><i></i></button>   <!-- 为了在里面放东西，所以需要用button，不能用input，因为button是双标签 -->
+                    </form>
                 </div>
             </div>
             <div class="moment"></div>

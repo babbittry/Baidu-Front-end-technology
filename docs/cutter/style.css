@@ -2,30 +2,38 @@
     margin: 0;
     padding: 0;
 }
-input, button, textarea {
+
+input,
+button,
+textarea {
     border: 0;
-    outline: none;     /*  取消轮廓边框 */
+    outline: none;
+    /*  取消轮廓边框 */
 }
+
 ul {
     list-style: none;
 }
+
 @font-face {
     font-family: 'icomoon';
-    src:  url('fonts/icomoon.eot?7yf4sd');
-    src:  url('fonts/icomoon.eot?7yf4sd#iefix') format('embedded-opentype'),
-      url('fonts/icomoon.ttf?7yf4sd') format('truetype'),
-      url('fonts/icomoon.woff?7yf4sd') format('woff'),
-      url('fonts/icomoon.svg?7yf4sd#icomoon') format('svg');
+    src: url('fonts/icomoon.eot?7yf4sd');
+    src: url('fonts/icomoon.eot?7yf4sd#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?7yf4sd') format('truetype'),
+        url('fonts/icomoon.woff?7yf4sd') format('woff'),
+        url('fonts/icomoon.svg?7yf4sd#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
-  }
-header {
-     width: 100%;
-     height: 990px;
-     background: url(images/header.png) no-repeat;
-     background-size: cover;
-     overflow: hidden;
 }
+
+header {
+    width: 100%;
+    height: 990px;
+    background: url(images/header.png) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
 header h2 {
     margin-top: 210px;
     color: #fff;
@@ -34,6 +42,7 @@ header h2 {
     text-align: center;
     line-height: 46px;
 }
+
 header .describe {
     margin: 90px auto 0;
     width: 770px;
@@ -44,6 +53,7 @@ header .describe {
     line-height: 28px;
 
 }
+
 header form {
     border: 1px solid #524e4b;
     width: 970px;
@@ -51,6 +61,7 @@ header form {
     margin: 104px auto 0;
 
 }
+
 header form .signUp {
     color: #fff;
     letter-spacing: 3px;
@@ -60,17 +71,20 @@ header form .signUp {
     text-align: center;
     margin-top: 60px;
 }
+
 header form .free {
     font-size: 10px;
     color: #5d5a53;
     line-height: 28px;
     text-align: center;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
+
 header form input {
     margin-top: 46px;
 }
-header form input[type = text] {
+
+header form input[type=text] {
     height: 50px;
     width: 292px;
     box-sizing: border-box;
@@ -79,18 +93,20 @@ header form input[type = text] {
     background-color: rgba(0, 0, 0, 0);
     color: #fff;
     margin-left: 100px;
-    margin-right: 30px; 
+    margin-right: 30px;
 }
-header form input[type = password] {
+
+header form input[type=password] {
     height: 50px;
     width: 292px;
     box-sizing: border-box;
     border: 1px solid #5d5a53;
     padding-left: 18px;
     background-color: rgba(0, 0, 0, 0);
-    margin-right: 30px; 
-} 
-header form input[type = button] {
+    margin-right: 30px;
+}
+
+header form input[type=button] {
     height: 50px;
     width: 120px;
     box-sizing: border-box;
@@ -98,13 +114,15 @@ header form input[type = button] {
     text-align: center;
     background-color: #fff;
 }
+
 .feature {
     width: 1030px;
     height: 710px;
     background-color: #fff;
     margin: 0 auto;
     overflow: hidden;
-} 
+}
+
 .feature .boatload {
     color: #141414;
     font-size: 10px;
@@ -113,6 +131,7 @@ header form input[type = button] {
     margin-top: 90px;
     line-height: 10px;
 }
+
 .feature .ready {
     font-size: 32px;
     color: #141414;
@@ -120,6 +139,7 @@ header form input[type = button] {
     font-weight: 100;
     margin-top: 44px;
 }
+
 .feature ul {
     position: relative;
     margin-top: 94px;
@@ -127,43 +147,52 @@ header form input[type = button] {
     height: 392px;
     overflow: hidden;
 }
+
 .feature ul li {
     position: absolute;
     width: 430px;
 }
+
 .feature ul li:first-child {
     top: 0;
     left: 0;
 }
+
 .feature ul li:nth-child(2) {
     top: 0;
     right: 0;
 }
+
 .feature ul li:nth-child(3) {
     top: 168px;
     left: 0;
 }
+
 .feature ul li:nth-child(4) {
     top: 168px;
     right: 0;
 }
+
 .feature ul li .icon {
     font-family: 'icomoon';
     color: #141414;
     font-size: 48px;
     float: left;
 }
+
 .feature ul li .title {
     font-size: 16px;
     margin-left: 68px;
-    color: #141414; 
+    color: #141414;
 }
+
 .feature ul li .words {
     margin-left: 68px;
     font-size: 12px;
     color: #6e6e6e;
     line-height: 26px;
 }
+
 .support {
     width: 100%;
     height: 800px;
@@ -173,6 +202,7 @@ header form input[type = button] {
     overflow: hidden;
     position: relative;
 }
+
 .support .title {
     font-size: 40px;
     width: 364px;
@@ -182,6 +212,7 @@ header form input[type = button] {
     top: 184px;
     left: 320px;
 }
+
 .support .words {
     font-size: 14px;
     color: #fff;
@@ -191,6 +222,7 @@ header form input[type = button] {
     top: 368px;
     left: 320px;
 }
+
 .support button {
     width: 240px;
     height: 60px;
@@ -200,28 +232,34 @@ header form input[type = button] {
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #6a706a;
 }
+
 .support button:nth-of-type(1) {
     left: 320px;
 }
+
 .support button:nth-of-type(2) {
     left: 584px;
 }
+
 .support button:hover {
     background-color: #fff;
     color: #000;
 }
+
 .produce {
     height: 580px;
     width: 966px;
     margin: 0 auto;
-    overflow: hidden; 
+    overflow: hidden;
 }
+
 .produce h2 {
     margin-top: 102px;
     font-size: 38px;
     font-weight: 200;
     text-align: center;
 }
+
 .produce .outter {
     width: 264px;
     margin-right: 100px;
@@ -229,106 +267,128 @@ header form input[type = button] {
     float: left;
     text-align: center;
 }
+
 .produce .outter:nth-of-type(2) {
     width: 230px;
 }
+
 .produce .outter:nth-of-type(3) {
     margin-right: 0;
 }
+
 .produce .title {
     font-size: 34px;
     font-weight: 200;
 }
+
 .produce .words {
     margin-top: 40px;
     font-size: 12px;
     color: #838383;
     line-height: 26px;
 }
+
 .photos {
     width: 964px;
     overflow: hidden;
     margin: 0 auto 0;
 }
+
 .photos div {
     overflow: hidden;
 }
+
 .photos .photo1 img {
     float: left;
     margin-top: 116px;
 }
+
 .photos .photo2 img {
     float: right;
     margin-top: 80px;
-    margin-bottom: 106px; 
+    margin-bottom: 106px;
 }
+
 .photos .photo1 .photo1Describe {
     float: right;
     width: 298px;
     margin-top: 192px;
 }
+
 .photos .photo2 .photo2Describe {
     float: left;
     width: 298px;
     margin-top: 152px;
 }
+
 .photos .photo1 .title,
 .photos .photo2 .title {
     font-size: 14px;
     position: relative;
     line-height: 32px;
-} 
+}
+
 .photos .photo1 .words,
 .photos .photo2 .words {
     margin-top: 22px;
-    font-size: 12px; 
+    font-size: 12px;
     color: #838383;
     line-height: 28px;
 }
+
 .crew {
     height: 1084px;
     width: 964px;
     margin: 0 auto;
-    overflow: hidden; 
+    overflow: hidden;
     position: relative;
 }
+
 .crew .title {
     margin-top: 100px;
     font-size: 30px;
     font-weight: 200;
     text-align: center;
-    line-height: 30px;  
+    line-height: 30px;
 }
+
 .crew .words {
     width: 696px;
     font-size: 14px;
-    color: #838383; 
+    color: #838383;
     line-height: 28px;
     text-align: center;
     margin: 36px auto 0;
 }
+
 .crew img {
     width: 470px;
     height: 340px;
     vertical-align: bottom;
 }
+
 .crew .head {
     position: relative;
 }
+
 .crew .head:nth-child(odd) {
     float: left;
 }
-.crew .head:nth-child(even){
+
+.crew .head:nth-child(even) {
     float: right;
 }
+
 .crew .head:nth-child(3),
 .crew .head:nth-child(4) {
     margin-top: 66px;
 }
+
 .crew .head:nth-child(5),
 .crew .head:nth-child(6) {
     margin-top: 30px;
 }
+
 .crew .head .mask {
     position: absolute;
     top: 0;
@@ -339,21 +399,25 @@ header form input[type = button] {
     color: #ffffff;
     opacity: 0;
 }
+
 .crew .head .mask h3 {
     text-align: center;
     margin-top: 112px;
     font-size: 14px;
     line-height: 14px;
 }
+
 .crew .head .mask p {
     margin-top: 20px;
     font-size: 10px;
     text-align: center;
     color: #968e8a;
 }
+
 .crew .head a:hover .mask {
     opacity: 1;
 }
+
 .crew .head .facebook,
 .crew .head .twitter,
 .crew .head .twitch {
@@ -364,24 +428,28 @@ header form input[type = button] {
     border: 1px solid #7a7a7a;
     width: 54px;
     height: 54px;
-    border-radius: 27px; 
+    border-radius: 27px;
     text-align: center;
     line-height: 54px;
     margin-top: 40px;
     margin-right: 10px;
 }
+
 .crew .head .facebook {
     margin-left: 124px;
 }
+
 .crew .head .twitch {
     margin-right: 0;
 }
+
 .signIn {
     width: 964px;
     height: 700px;
     margin: 0 auto;
     overflow: hidden;
 }
+
 .signIn form {
     float: left;
     margin-top: 72px;
@@ -390,49 +458,55 @@ header form input[type = button] {
     border: 1px solid #e7e7e7;
     border-radius: 8px;
 }
+
 .signIn form p {
     font-size: 12px;
-    margin-top: 50px; 
+    margin-top: 50px;
     text-align: center;
     color: #141414;
-    margin-bottom: 48px; 
+    margin-bottom: 48px;
 }
+
 .signIn form input {
     margin: 0 auto 30px;
     display: block;
-    border: 1px solid #d4d3d3;  
+    border: 1px solid #d4d3d3;
     border-radius: 1px;
-    padding-left: 16px; 
+    padding-left: 16px;
     width: 368px;
     height: 48px;
     line-height: 48px;
     box-sizing: border-box;
 }
+
 .signIn form textarea {
     box-sizing: border-box;
     font-family: 'Microsoft YaHei';
     margin: 0 auto 30px;
     display: block;
-    border: 1px solid #d4d3d3;  
+    border: 1px solid #d4d3d3;
     border-radius: 1px;
-    padding-left: 16px; 
+    padding-left: 16px;
     width: 368px;
     height: 142px;
     line-height: 48px;
     resize: none;
 }
-.signIn form input[type = button] {
+
+.signIn form input[type=button] {
     background-color: #141414;
     color: #fff;
     text-align: center;
     font-size: 10px;
-    padding-left: 0; 
+    padding-left: 0;
 }
+
 .signIn .contact {
     float: right;
     width: 370px;
     height: 700px;
 }
+
 .signIn .info {
     font-size: 12px;
     overflow: hidden;
@@ -440,7 +514,8 @@ header form input[type = button] {
     color: #141414;
     margin-bottom: 38px;
 }
-.signIn .info span{
+
+.signIn .info span {
     float: left;
     font-family: 'icomoon';
     margin-right: 18px;
@@ -449,6 +524,7 @@ header form input[type = button] {
     overflow: hidden;
     line-height: 28px;
 }
+
 .signIn .contact .title {
     font-size: 30px;
     font-weight: 200;
@@ -456,6 +532,7 @@ header form input[type = button] {
     margin-top: 160px;
     line-height: 30px;
 }
+
 .signIn .contact .words {
     font-size: 12px;
     line-height: 26px;
@@ -463,6 +540,7 @@ header form input[type = button] {
     margin-top: 40px;
     margin-bottom: 74px;
 }
+
 footer {
     width: 100%;
     height: 410px;
@@ -470,35 +548,42 @@ footer {
     box-sizing: border-box;
     overflow: hidden;
 }
+
 footer dl {
-    margin-top: 88px; 
+    margin-top: 88px;
     font-size: 12px;
     line-height: 12px;
     display: inline-block;
     width: 300px;
     vertical-align: top;
-    
+
 }
+
 footer dl:nth-child(1) {
     margin-left: 214px;
 }
+
 footer dl dt {
     color: #fff;
     margin-bottom: 36px;
 }
+
 footer dl dd {
     color: #565656;
     margin-bottom: 36px;
 }
+
 footer .enjoy dd {
     line-height: 30px;
     font-family: 'icomoon';
 }
+
 footer .enjoy dd a {
     font-size: 18px;
     color: #5b5b5b;
     margin-right: 28px;
 }
+
 footer .enjoy dd a:last-child {
     margin-right: 0;
 }

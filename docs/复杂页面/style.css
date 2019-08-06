@@ -2,21 +2,43 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     display: flex;
     height: 100%;
 }
+
+input,
+button {
+    border: 0;
+    outline: none;
+    /*  取消轮廓边框 */
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?rsqu9d');
+    src: url('fonts/icomoon.eot?rsqu9d#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?rsqu9d') format('truetype'),
+        url('fonts/icomoon.woff?rsqu9d') format('woff'),
+        url('fonts/icomoon.svg?rsqu9d#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .nav {
     width: 100px;
     height: 100vh;
     background-color: #1d2531;
     position: relative;
 }
+
 .nav .item {
     width: 60px;
     height: 60px;
     margin: 20px;
 }
+
 .actionLeft {
     position: absolute;
     left: 26px;
@@ -24,6 +46,7 @@ body {
     width: 16px;
     height: 16px;
 }
+
 .actionRight {
     position: absolute;
     right: 26px;
@@ -31,44 +54,53 @@ body {
     width: 16px;
     height: 16px;
 }
+
 .menu {
     width: 250px;
     height: 100vh;
     background-color: #222c3c;
 }
+
 .menu dl {
     margin: 29px;
 }
+
 .menu dl dt {
     overflow: hidden;
     margin-bottom: 10px;
     height: 36px;
     position: relative;
 }
-.menu dl dt span{
+
+.menu dl dt span {
     color: #5b6779;
     font-size: 18px;
     float: left;
     line-height: 36px;
 }
+
 .menu dl dt img {
     width: 16px;
     height: 16px;
     position: absolute;
-    top:50%;
+    top: 50%;
     right: 0;
-    transform:translate(0,-50%);  /* 走的自己的一半 */
+    transform: translate(0, -50%);
+    /* 走的自己的一半 */
 
 }
+
 .menu dl dd {
     color: #b7c0cd;
     font-size: 14px;
     line-height: 36px;
     position: relative;
 }
+
 .menu dl dd img {
     margin-right: 12px;
 }
+
 .menu dl dd .remain {
     display: inline-block;
     position: absolute;
@@ -81,6 +113,7 @@ body {
     text-align: center;
     color: #fff;
 }
+
 .menu dl dd .warning {
     display: inline-block;
     position: absolute;
@@ -93,11 +126,13 @@ body {
     text-align: center;
     color: #fff;
 }
+
 .menu hr {
     width: 190px;
     border: 1px solid #2a3547;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
+
 .message {
     flex: 1;
     height: 100vh;
@@ -106,18 +141,22 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 .top {
     width: 100%;
     height: 80px;
     background-color: pink;
     display: block;
+    position: relative;
 }
+
 .main {
     width: 100%;
     height: 100vh;
     display: flex;
     overflow: hidden;
 }
+
 .list {
     width: 400px;
     box-sizing: border-box;
@@ -129,4 +168,65 @@ body {
     float: left;
     flex: 1;
     background-color: skyblue;
+}
+
+.message .main .list .search {
+    width: 340px;
+    height: 36px;
+    margin: 16px auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.message .main .list .search input {
+    width: 310px;
+    height: 36px;
+    box-sizing: border-box;
+    border: 1px solid #e6e9ec;
+    border-right: 0;
+    padding-left: 14px;
+    float: left;
+}
+
+.message .main .list .search button {
+    width: 30px;
+    float: left;
+    height: 36px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.message .main .list .search button i {
+    font-family: 'icomoon';
+    font-size: 16px;
+    line-height: 34px;
+    box-sizing: border-box;
+    font-style: normal;
+    color: #a2acbc;
+}
+.message .top .msg {
+    font-size: 16px;
+    color: #354052;
+    line-height: 80px;
+    margin-left: 30px;
+}
+.message .top img {
+    width: 50px;
+    position: absolute;
+    right: 182px;
+    top: 14px;
+}
+.message .top .name {
+    font-size: 12px;
+    color: #2399f1;
+    position: absolute;
+    right: 102px;
+    top: 24px;
+}
+.message .top .identity {
+    font-size: 12px;
+    color: #b5b5b5;
+    position: absolute;
+    right: 81px;
+    top: 46px;
 }
